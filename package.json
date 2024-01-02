@@ -1,0 +1,30 @@
+{
+  "name": "ip-whois",
+  "version": "0.0.1",
+  "description": "",
+  "main": "library/src/index.js",
+  "types": "library/src/index.d.ts",
+  "files": [
+    "library/src"
+  ],
+  "license": "Apache-2.0",
+  "keywords": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "devDependencies": {
+    "@types/node": "20.8.2",
+    "gts": "^5.2.0",
+    "typescript": "~5.2.0"
+  },
+  "dependencies": {
+    "axios": "^1.6.3"
+  }
+}
