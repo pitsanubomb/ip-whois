@@ -20,7 +20,7 @@ class IPWhoIs extends Axios {
   /**
    * @method lookUp
    * @description lookUp method for IPWhoIs API
-   * @returns {Promise<any>} Promise with the response from the API
+   * @returns return information about IP address GeoLocation and ISP
    */
   async lookUp(): Promise<AxiosResponse<any>> {
     try {
